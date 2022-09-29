@@ -1,5 +1,7 @@
 # Readme
 
+*** Not Ready for PUBLIC USE. Suggestions/Reviews are welcome! ***
+
 This is a simple Rust Wrapper over SQLX and Postgres. 
 
 To connect to Postgres, use the following 
