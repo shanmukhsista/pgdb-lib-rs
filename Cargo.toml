@@ -1,7 +1,11 @@
 [package]
-name = "database-lib"
+name = "pgdb-lib-rs"
 version = "0.1.0"
 edition = "2021"
+license = "MIT"
+keywords = ["postgres", "api database", "database wrapper" , "postgres library"]
+categories = ["database-utilities", "database-wrapper"]
+exclude = ["/.idea"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -11,3 +15,4 @@ sqlx = { version = "0.6.2", features = [ "runtime-async-std-native-tls", "postgr
 dotenvy = "0.15.5"
 thiserror = "1.0.37"
 tokio-test = "0.4.2"
+
