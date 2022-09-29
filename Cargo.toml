@@ -3,7 +3,7 @@ name = "pgdb-lib-rs"
 version = "0.1.0"
 edition = "2021"
 license = "MIT"
-keywords = ["postgres", "api database", "database wrapper" , "postgres library"]
+keywords = ["postgres", "database", "wrapper" , "postgres-library"]
 categories = ["database-utilities", "database-wrapper"]
 exclude = ["/.idea"]
 
