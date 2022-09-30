@@ -4,12 +4,9 @@ use std::fmt::{Debug, Display, Formatter};
 use sqlx::{PgPool, Pool, Postgres};
 use thiserror::Error;
 
-pub fn add(left: usize, right: usize) -> usize {
-    left + right
-}
 
 #[derive(Error, Debug)]
-enum DatabaseConnectionError {
+pub enum DatabaseConnectionError {
     #[error("Invalid Connection String ")]
     InvalidConnectionString(dotenvy::Error),
     #[error("Unable to connect to the database. ")]
@@ -18,7 +15,7 @@ enum DatabaseConnectionError {
 
 
 
-struct Database {
+pub struct Database {
     underlying: Pool<Postgres>,
 }
 
