@@ -14,7 +14,7 @@ pub enum DatabaseConnectionError {
 }
 
 
-
+#[derive(Clone)]
 pub struct Database {
     underlying: Pool<Postgres>,
 }
